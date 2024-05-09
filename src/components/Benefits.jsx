@@ -23,7 +23,7 @@ const Benefits = () => {
             >
               <div className="relative h-full z-2 flex flex-col justify-between min-h-[22rem] p-[2.4rem] pointer-events-none">
                 <div>
-                  <h5 className="h2 mb-5">{item.title}</h5>
+                  <h5 className="h5 mb-5">{item.title}</h5>
                   <p className="body-2 mb-6 text-n-3">{item.text}</p>
                 </div>
                 <div className="flex items-center mt-auto">
@@ -39,7 +39,7 @@ const Benefits = () => {
                   <Arrow />
                 </div>
               </div>
-              {item.light && <GradientLight />}s
+              {item.light && <GradientLight />}
               <div
                 className="absolute inset-0.5 bg-n-8"
                 style={{ clipPath: "url(#benefits)" }}
