@@ -86,3 +86,23 @@
 .-rotate-360 {
   @apply rotate-[-360deg];
 }
+
+@keyframes spin {
+  from {
+    transform: rotate(calc(45deg * var(--index)));
+  }
+
+  to {
+    transform: rotate(calc(360deg + (45deg * var(--index))));
+  }
+}
+
+@keyframes spin2 {
+  from {
+    transform: rotate(calc(-45deg * var(--index)));
+  }
+
+  to {
+    transform: rotate(calc(-360deg + (-45deg * var(--index))));
+  }
+}
