@@ -87,7 +87,7 @@
   @apply rotate-[-360deg];
 }
 
-@keyframes spin {
+@keyframes spin1 {
   from {
     transform: rotate(calc(45deg * var(--index)));
   }
@@ -105,4 +105,32 @@
   to {
     transform: rotate(calc(-360deg + (-45deg * var(--index))));
   }
+}
+
+@keyframes loading {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.service1 img {
+  transition: all 0.5s ease;
+}
+
+.service1:hover img {
+  scale: 105%;
+  filter: grayscale(0);
+}
+
+.service2 img {
+  transition: all 0.5s ease;
+}
+
+.service2:hover img {
+  scale: 105%;
+  filter: saturate(2);
 }

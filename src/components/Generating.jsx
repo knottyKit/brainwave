@@ -1,5 +1,6 @@
 import React from "react";
 import { loading } from "../assets";
+import Loading from "../assets/svg/Loading.jsx";
 
 const Generating = ({ className }) => {
   return (
@@ -8,7 +9,7 @@ const Generating = ({ className }) => {
         className || ""
       } text-base `}
     >
-      <img src={loading} className="w-5 h-5 mr-4" alt="loading" />
+      <Loading />
       AI is Generating
     </div>
   );

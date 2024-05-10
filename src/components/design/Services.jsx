@@ -59,7 +59,10 @@ export const VideoBar = () => {
       />
 
       <div className="flex-1 bg-[#D9D9D9]">
-        <div className="w-1/2 h-0.5 bg-color-1"></div>
+        <div
+          className=" h-0.5 bg-color-1"
+          style={{ animation: "loading 25s linear infinite" }}
+        ></div>
       </div>
     </div>
   );
